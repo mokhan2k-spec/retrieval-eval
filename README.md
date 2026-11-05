@@ -82,7 +82,22 @@ for a real run.
 
 SciFact test split. Produced by `make reproduce`; do not edit by hand.
 
+Run on 2026-11-05 on a Windows 11 laptop, CPU only, while the machine was otherwise loaded. `reproduce` took 1917 s (about 32 min) wall time, about 17 min of it embedding the corpus. Dense embeddings on CPU can differ in the last float digits across machines.
+
 <!-- results:start -->
+| arm | ndcg@10 | recall@10 | recall@100 | mrr@10 | success@1 | success@5 |
+|---|---|---|---|---|---|---|
+| bm25 | 0.6863 | 0.8187 | 0.9127 | 0.6492 | 0.5500 | 0.7567 |
+| dense | 0.7127 | 0.8362 | 0.9417 | 0.6822 | 0.6067 | 0.7800 |
+| hybrid | 0.7234 | 0.8554 | 0.9650 | 0.6879 | 0.5967 | 0.7867 |
+| hybrid+rerank | 0.6976 | 0.8322 | 0.9650 | 0.6646 | 0.5833 | 0.7667 |
+
+scifact test: 300 queries, 5183 docs. run `20261105T211238Z-63155615-f156-47c2-a829-e59e9dfd3ba2`, config `cb43cf34fb92`, dataset sha256 `536e14446a0b`.
+
+Paired significance (B vs A, positive = B better):
+
+- hybrid -> hybrid+rerank (n_pairs=300): mean nDCG@10 diff -0.0258 (95% bootstrap CI [-0.0526, +0.0015]); permutation p=0.06719, Wilcoxon p=0.08208; McNemar success@1 p=0.6655 (wins 22, losses 26)
+- bm25 -> hybrid (n_pairs=300): mean nDCG@10 diff +0.0371 (95% bootstrap CI [+0.0169, +0.0568]); permutation p=0.0004, Wilcoxon p=2.54e-05; McNemar success@1 p=0.01254 (wins 21, losses 7)
 <!-- results:end -->
 
 ## Judge calibration
