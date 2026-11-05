@@ -39,6 +39,11 @@ results file whose config hash differs from the current config.
   `success@k`, never `recall`.
 - `MRR@10`: reciprocal rank of the first relevant document.
 
+The metrics are written out by hand so they can be mutation-tested.
+`tests/test_metrics_vs_ir_measures.py` checks every one of them, per query,
+against [`ir_measures`](https://github.com/terrierteam/ir_measures) (the
+`pytrec_eval` backend) on random graded qrels.
+
 Significance (hybrid vs hybrid+rerank, and bm25 vs hybrid) is computed only
 over complete pairs (queries where both arms have a value) and reports
 `n_pairs`: a two-sided paired randomization test on per-query nDCG@10 (10,000
