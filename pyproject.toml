@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "retrieval-eval"
+version = "0.1.0"
+description = "Fail-closed BEIR evaluation harness: BM25, dense, RRF hybrid and cross-encoder rerank, with paired significance tests."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "httpx>=0.27"]
+
+[project.optional-dependencies]
+# Heavy, model-running dependencies. Tests and CI never need these.
+models = ["bm25s>=0.2", "PyStemmer>=2.2", "sentence-transformers>=3.0", "huggingface_hub"]
+dev = ["pytest>=8", "mutmut==3.3.1", "scikit-learn>=1.4"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/retrieval_eval"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mutmut]
+paths_to_mutate = [
+  "src/retrieval_eval/metrics.py",
+  "src/retrieval_eval/stats.py",
+  "src/retrieval_eval/runner.py",
+]
+tests_dir = ["tests/"]

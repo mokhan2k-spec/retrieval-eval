@@ -1,0 +1,14 @@
+data/
+.venv/
+runs/
+mutants/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+uv.lock
+.pytest_tmp/
