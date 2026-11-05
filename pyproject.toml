@@ -41,6 +41,5 @@ do_not_mutate = [
   "src/retrieval_eval/rerank.py",
   "src/retrieval_eval/retrievers.py",
 ]
-debug = true
 tests_dir = ["tests/"]
 debug = true
