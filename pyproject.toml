@@ -24,9 +24,22 @@ testpaths = ["tests"]
 pythonpath = ["src"]
 
 [tool.mutmut]
-paths_to_mutate = [
-  "src/retrieval_eval/metrics.py",
-  "src/retrieval_eval/stats.py",
-  "src/retrieval_eval/runner.py",
+# The whole package is copied so the tests can import it; only metrics.py,
+# stats.py and runner.py are mutated.
+paths_to_mutate = ["src/retrieval_eval/"]
+do_not_mutate = [
+  "src/retrieval_eval/__init__.py",
+  "src/retrieval_eval/__main__.py",
+  "src/retrieval_eval/cli.py",
+  "src/retrieval_eval/config.py",
+  "src/retrieval_eval/data.py",
+  "src/retrieval_eval/judge.py",
+  "src/retrieval_eval/kappa.py",
+  "src/retrieval_eval/labels.py",
+  "src/retrieval_eval/pipeline.py",
+  "src/retrieval_eval/report.py",
+  "src/retrieval_eval/rerank.py",
+  "src/retrieval_eval/retrievers.py",
 ]
+debug = true
 tests_dir = ["tests/"]
