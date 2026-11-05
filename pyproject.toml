@@ -43,3 +43,4 @@ do_not_mutate = [
 ]
 debug = true
 tests_dir = ["tests/"]
+debug = true
