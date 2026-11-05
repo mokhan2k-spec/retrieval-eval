@@ -6,6 +6,7 @@ If mutmut itself fails, no results are read and the gate fails.
 """
 
 import argparse
+import shutil
 import subprocess
 import sys
 from collections import Counter
@@ -16,13 +17,19 @@ def main() -> int:
     ap.add_argument("--min", type=float, required=True, help="minimum score, percent")
     args = ap.parse_args()
 
-    run = subprocess.run([sys.executable, "-m", "mutmut", "run"], check=False)
+    # Use the console script: under `python -m mutmut` mutmut's __main__ is imported
+    # a second time by the trampolines and set_start_method('fork') raises.
+    mutmut = shutil.which("mutmut")
+    if mutmut is None:
+        print("mutmut is not installed", file=sys.stderr)
+        return 1
+    run = subprocess.run([mutmut, "run"], check=False)
     if run.returncode != 0:
         print(f"mutmut run exited {run.returncode}", file=sys.stderr)
         return 1
     # mutmut 3.3 has no stats export; `results --all true` prints "    <mutant>: <status>".
     out = subprocess.run(
-        [sys.executable, "-m", "mutmut", "results", "--all", "true"],
+        [mutmut, "results", "--all", "true"],
         check=True, capture_output=True, text=True,
     ).stdout
     stats = Counter(
