@@ -1,0 +1,22 @@
+You are an independent relevance labeller. Do NOT use any tools, files or the web: everything you need is below.
+Rubric (from the instructions):
+- `1` (relevant): the abstract contains evidence that SUPPORTS or REFUTES the
+  claim. It does not matter which way the evidence points, only that the
+  abstract speaks directly to the claim.
+- `0` (not relevant): the abstract is on a related topic but contains no
+  evidence for or against the claim, or is unrelated.
+
+Rules of thumb:
+
+1. Judge only from the title and abstract shown. Do not search the web.
+2. A shared keyword or topic is not enough. The abstract must bear on the
+   specific claim.
+3. If you genuinely cannot decide, pick the closer label and write why in
+   `notes`.
+   labels and which system returned each document, and would bias you.
+5. Label at least 100 rows; all rows is better. Rows may be done in any order.
+
+For EVERY one of the 120 rows, label the (query, doc_title + doc_text) pair 1 or 0. Ignore the human_label and notes columns.
+Reply with ONLY a CSV (no prose, no code fence), header exactly: item_id,label,reason  -- one row per item_id, all 120, reason under 15 words, double-quoted.
+
+=== labelling-sheet.csv ===

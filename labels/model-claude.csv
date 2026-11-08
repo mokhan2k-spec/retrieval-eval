@@ -1,0 +1,121 @@
+item_id,label,reason
+item001,0,Troponin T long-term mortality; nothing on timing of symptom onset sensitivity.
+item002,1,GNB1/GNB2 mutations in cancers disrupt Gα interaction and activate PI3K-mTOR signaling.
+item003,0,HNF4A mutations and macrosomia; no diabetes onset age.
+item004,1,Genome size of CoYMV determined as 7489 bp.
+item005,1,States CMA activity declines in aged organisms.
+item006,0,Allium extract and NAFLD; unrelated to ALDH2 drinking.
+item007,0,Nrg1/ErbB4 GABA circuits; nothing on APOE4.
+item008,1,Granule cell neurons' ISG expression and antiviral response against West Nile virus.
+item009,0,Hematopoietic differentiation of hPSCs; no HSC purity data.
+item010,1,Describes MOMP releasing cytochrome c from intermembrane space.
+item011,0,TCS specificity via binding affinity, not phosphotransfer rates.
+item012,1,Transmural LGE associated with advanced cardiac amyloidosis and amyloid burden.
+item013,0,Endometrial hyperplasia carcinoma risk; no NR5A2.
+item014,1,HPV testing detects more CIN2/3 and reduces later lesions versus Pap.
+item015,0,IPF vascular lesions; no venule versus arteriole diameter comparison.
+item016,0,Cytochrome c redox in apoptosis; no FoxO3a.
+item017,1,Finds termination is passive and does not depend on cis-acting sequences.
+item018,1,Systematic review of teaching versus nonteaching hospital outcomes.
+item019,0,Mechanosensitive channels; unrelated to Admp/chordin.
+item020,0,Schistosome Langerhans cells; not malaria parasite dynamics.
+item021,1,Lrh-1/NR5A2 needed for endometrial decidualization.
+item022,0,Dorsal closure filopodia; unrelated to Admp/chordin.
+item023,1,Meta-analysis: higher birthweight increases breast cancer risk.
+item024,0,FGF21 review; no PPAR-RXR ligand activation.
+item025,1,ALDH2 null homozygotes drink considerably less alcohol.
+item026,1,Placental weight positively associated with maternal breast cancer risk.
+item027,1,HPV testing detects more CIN2/3 than cytology in trial.
+item028,1,CSF1R-deficient mice suppressed MOZ-TIF2 leukemia, refuting the claim.
+item029,1,Reports $750 million savings with 7% KPD participation.
+item030,0,Leukaemia MRD; unrelated to PrP positivity.
+item031,0,RIG-I and cap methylation; no IFIT1.
+item032,0,Epigenetic stem cell review; no microRNA in NSCs.
+item033,0,Synthetic associations from rare variants; no 1000 Genomes mapping.
+item034,1,Review covers phosphoinositides in invadopodia formation.
+item035,0,TGFβ EMT lung cancer; unrelated to MSC infections.
+item036,0,Treg expansion in diabetes; no UCB TCR diversity.
+item037,1,Pyridostatin stabilizes G4, contrary to the claim of destabilizing.
+item038,0,NUDT15 and thiopurine leukopenia; no TPMT anabolism detail.
+item039,0,p16 luciferase mouse model; no OPMLs.
+item040,1,YAP/TAZ nuclear translocation and TEAD interaction described.
+item041,0,Yeast gene order browser; no aneuploidy in domesticated yeast.
+item042,0,Fructosamine biomarker; no hypertension.
+item043,1,Leukoreduction did not decrease serious infections.
+item044,0,ceRNA study with miR-122; not miR-7a in ovaries.
+item045,0,HP1 phosphorylation; no NF2/YAP.
+item046,0,Bone marrow to neurons; not glial progenitors.
+item047,0,Grafted hiPSC neurons synaptic integration; no APOE4.
+item048,1,PtdIns(3,4)P2 accumulation precedes podosome formation after Src expression.
+item049,0,Pathology of TB lesions; no drug penetration.
+item050,0,Carotid MRI monocyte markers; no amyloidosis LGE.
+item051,0,NuA4 transcription elongation; no IF3.
+item052,1,Slc23a1 (Svct2) knockout reduces ascorbate, opposing the claim.
+item053,0,Microtubule stabilization in spinal injury; no LRRK2.
+item054,1,HTLV-I endemic in Africa and Caribbean; immigrants affected.
+item055,0,miRNAs in stress; no methionine restriction.
+item056,0,NT5C2 chemoresistance; no TPMT methylation.
+item057,1,Curli-producing bacteria infection triggers higher autoantibody titers.
+item058,1,IFN-γR-deficient mice develop severe myocarditis, refuting the claim.
+item059,1,Ribosome occupancy of lincRNAs matches 5' UTRs.
+item060,0,Dosimetry of radioiodine; no volume reduction.
+item061,1,Hedgehog inhibition increased vascular density and drug delivery; bears on the claim.
+item062,0,PI3K inhibitor and Ras resistance; no MEK combination.
+item063,0,UreI channel structure; not urease subunits.
+item064,0,HF in congenital heart disease; no incidence trend.
+item065,1,Monocytes do not contribute to tissue macrophages; bears on bone marrow contribution.
+item066,1,mGluR6 knockout loses ON responses supporting ON-bipolar origin.
+item067,0,Reverse Warburg; no steric hindrance.
+item068,0,US burden of disease; no kidney paired donation savings.
+item069,1,ISGs in granule cells mediate antiviral effects against neurotropic viruses.
+item070,1,Macropinocytosis delivers protein-derived amino acids in Ras cells.
+item071,0,Powered mobility cognition; no physical activity.
+item072,1,AMPK activation reduces fibrosis, contradicting the claim.
+item073,0,NIV cost effectiveness; unrelated to teaching hospitals.
+item074,0,General T6SS review; no tip effector detail.
+item075,1,Memory CD4 T cells enhance innate chemokines and early viral control.
+item076,0,Pol II elongation; no IF3.
+item077,1,Severe hypoglycemia associated with greater dementia risk.
+item078,0,Reprogramming review; no avian sex determination.
+item079,0,Aire in thymic epithelium; not skin tumors.
+item080,0,UreG chaperone; no gene cluster induction by nickel.
+item081,0,CPOE and DVT alerts; no GCS in stroke.
+item082,0,ctsR regulation; no sporulation of clpC mutants.
+item083,0,NETs oxidized mtDNA; no HMGB1.
+item084,0,Perinatal mortality; no population growth effect.
+item085,0,Wnt5a in adipose; no NR5A2.
+item086,1,Review finds positive birthweight-breast cancer association.
+item087,0,Irp2 in COPD; no IRE binding to DMT1.
+item088,0,Auxin gradients PIN1; no VPS9a.
+item089,0,RDW mortality; no leukoreduced blood.
+item090,0,NIV benefit in transplant patients; no failure-based decrease.
+item091,1,Caloric restriction made methylation age appear younger, refuting the claim.
+item092,1,High CRP increased exacerbation risk in COPD, refuting the claim.
+item093,0,PrEP macaques; no colchicine.
+item094,0,T6SS review; no effector on tube tip.
+item095,1,Chronic exercise increases eNOS/iNOS expression altering vascular responses.
+item096,0,Comorbidity and febrile neutropenia; no vessel density.
+item097,0,Nuclear transfer stem cells; no MSC infections.
+item098,1,Febrile seizures cause persistent excitability changes in limbic circuits.
+item099,0,EBERs recognized by RIG-I; no West Nile granule neurons.
+item100,0,H2S releases NO; no NOX2 peroxynitrite.
+item101,0,Zebrafish hematopoiesis review; no Pk localization.
+item102,0,Glioblastoma survivors profiling; no TNFAIP3.
+item103,1,BCL-2 required for leukemia maintenance, supporting tumor maintenance claim.
+item104,0,p18 tumor suppressor; no TNFAIP3.
+item105,1,mosGCTL-1 is induced by WNV.
+item106,1,NETs released by ANCA-stimulated neutrophils.
+item107,0,Rifampin TB review; no IV errors.
+item108,1,Glycolysis supplies ATP in axonal transport; mentions glycolysis but not primary pathway claim.
+item109,0,H2S and eNOS; no exercise.
+item110,1,Exercise training improves endothelium-mediated NO relaxation and ecNOS.
+item111,1,Troponin activator CK-2017357 targets fast skeletal muscle.
+item112,1,Polymeal modeled to reduce cardiovascular events.
+item113,0,ATR deletion in adult mice; no αvβ8.
+item114,0,CTCs in breast cancer; no colorectal fluoropyrimidines.
+item115,0,FACT histone binding; no TRPML.
+item116,0,Tet1/Tet2 in ESCs; no DMRT1.
+item117,1,Blocking TDP-43 mitochondrial localization prevents neuronal loss, refuting the claim.
+item118,0,Statins in primary prevention; no colchicine.
+item119,0,Gut microbiome arterial stiffness; no serotype microarrays.
+item120,0,BNP and diabetes; no copeptin.

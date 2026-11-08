@@ -107,7 +107,37 @@ Paired significance (B vs A, positive = B better):
 
 ## Judge calibration
 
-Status: **pending, needs >= 100 human labels.**
+Status: **two-model agreement done (8 Nov 2026); human calibration pending, needs >= 100 human labels.**
+
+### Two independent model labellers
+
+Two different models from two vendors each labelled all 120 rows of the sheet
+on their own. Each run was blind: no `key.csv`, no tools and no web, only
+`labels/model-prompt.txt` with the sheet pasted after it, in a fresh session.
+
+- Claude: Claude Code CLI 2.1.319, `--model sonnet`. Labels are in `labels/model-claude.csv`.
+- Codex: Codex CLI 0.160.1, model `gpt-6.1-sol`, empty `CODEX_HOME`. Labels are in `labels/model-codex.csv`.
+
+`python scripts/model_agreement.py`:
+
+| pair | Cohen's kappa | raw agreement |
+|---|---|---|
+| Claude vs Codex | **0.878** | 113/120 |
+| Claude vs qrels | 0.717 | 103/120 |
+| Codex vs qrels | 0.667 | 100/120 |
+| both models agree (n=113) vs qrels | 0.733 | 98/113 |
+
+What this shows: the two models agree with each other almost perfectly. Each
+model agrees substantially with the dataset's own labels (Landis and Koch
+bands). Both models mark fewer pairs relevant than the qrels do (47 and 48
+against 60), so most disagreements are qrels-relevant documents that the
+models read as off-claim.
+
+What it does not show: that the models agree with a person. Two models can
+share a bias, so this is a model-consistency check, not a human calibration.
+The human column below is still empty.
+
+### Human labels (pending)
 
 `labels/labelling-sheet.csv` holds 120 (query, document) pairs sampled with a
 fixed seed from the hybrid and hybrid+rerank top-10s, about half qrels-relevant
